@@ -1,1 +1,26 @@
+Overview
+In this assignment, you will tackle a modified version of the classic pancake sorting problem where each pancake has a burnt side that must end up facing down. Your task is to implement a solution using either the Breadth-First Search (BFS) or the A* search algorithm, to correctly order the pancakes with the unburnt side up in a minimal number of flips.
+Problem Description
+•	Each pancake has an ID number from 1 to 4, corresponding to its size (1 being the smallest and 4 the largest).
+•	Each pancake is either 'b' (burnt side up) or 'w' (unburnt side up).
+•	The goal state is to have all pancakes sorted by size with the unburnt side up: "1w2w3w4w".
+Input Format
+Your program should accept an input string that defines the initial state of the pancakes and the search algorithm to use:
+•	The format for the input is #C#C#C#C-X where:
+o	# is the ID of a pancake.
+o	C is a character ('w' or 'b') indicating whether the burnt side is up.
+o	X is the character 'b' for BFS or 'a' for A* search.
+•	Example input: "4b1w2b3w-a"
+Implementation Details
+•	Flipping Cost: The cost of flipping n pancakes is n.
+•	*Heuristic Function (A)**: Use the heuristic discussed in class, defined as the ID of the largest pancake that is out of place.
+•	Graph Search: Utilize a closed list to prevent revisiting nodes.
+•	Code Comments: Clearly comment your code to explain the implementation, especially the data structures used for managing the search frontiers.
+Tie-Breaking Mechanism
+When there is a tie between nodes, compute a numerical ID by replacing 'w' with 1 and 'b' with 0 (forming an eight-digit binary-like number). Select the node with the higher numerical ID.
+Output
+Your program must output the steps taken by the specified search algorithm to reach the goal state, detailing each move:
+•	For each state transition, indicate the flip point with the character "|".
+•	For A*, also output the actual cost (g) and the heuristic value (h) for each step.
+
 
