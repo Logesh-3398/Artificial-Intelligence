@@ -1,3 +1,8 @@
 Description
-In this homework, you will work on the same alpha-beta search problem that we have solved in class. The slide also had a YouTube link for you to watch the complete solution for the example search tree. The tree structure is fixed and is shown in the figure below. You need to write a program that receives 12 numbers separated by space from the user. The 12 input numbers will correspond to the 12 terminal nodes of the tree from left to right. Your program should print the index of the terminal states that will be pruned using the alpha-beta search algorithm. The indexes are fixed and are shown in the figure below (0 to 11). As an example case, if the fourth blue triangle from the left should be pruned, your program must print: “6 7” referring to the two terminal nodes below that node.
+In this homework, you will work on the same alpha-beta search problem that we have solved in class. The slide also had a YouTube link for you
+to watch the complete solution for the example search tree. The tree structure is fixed and is shown in the figure below. You need to write a 
+program that receives 12 numbers separated by space from the user. The 12 input numbers will correspond to the 12 terminal nodes of the tree 
+from left to right. Your program should print the index of the terminal states that will be pruned using the alpha-beta search algorithm. 
+The indexes are fixed and are shown in the figure below (0 to 11). As an example case, if the fourth blue triangle from the left should be 
+pruned, your program must print: “6 7” referring to the two terminal nodes below that node.
 
