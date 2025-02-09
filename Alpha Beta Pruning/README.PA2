@@ -1,8 +1,15 @@
-Description
-In this homework, you will work on the same alpha-beta search problem that we have solved in class. The slide also had a YouTube link for you
-to watch the complete solution for the example search tree. The tree structure is fixed and is shown in the figure below. You need to write a 
-program that receives 12 numbers separated by space from the user. The 12 input numbers will correspond to the 12 terminal nodes of the tree 
-from left to right. Your program should print the index of the terminal states that will be pruned using the alpha-beta search algorithm. 
-The indexes are fixed and are shown in the figure below (0 to 11). As an example case, if the fourth blue triangle from the left should be 
-pruned, your program must print: “6 7” referring to the two terminal nodes below that node.
+Overview
+In this assignment, you are required to implement the alpha-beta pruning algorithm on a fixed search tree structure, similar to what was discussed in class. Your task is to identify which terminal nodes of the tree will not be evaluated (pruned) by the algorithm given a specific set of input values for these nodes.
+Task Description
+•	The search tree has a predefined structure with terminal nodes labeled from 0 to 11.
+•	Your program should accept 12 numbers as input, each number corresponding to the value of one terminal node, ordered from left to right.
+Input Format
+•	Input will consist of 12 space-separated integers, each representing the value of a terminal node in the search tree from left to right.
+Output
+•	Your program should output the indexes of the terminal nodes that are pruned during the alpha-beta pruning process.
+•	The output should be a space-separated list of indexes.
+Implementation Details
+•	Implement the alpha-beta search algorithm as discussed in class and demonstrated in the provided YouTube video.
+•	Use the alpha-beta pruning logic to determine which branches of the tree will not be explored and hence which terminal nodes will be pruned.
+•	The indexes should be printed in ascending order.
 
