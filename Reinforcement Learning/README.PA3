@@ -1,1 +1,39 @@
+Overview
+In this programming assignment, you will implement the Q-learning algorithm to determine the optimal path to a goal state on a 4x4 board. This task involves managing different types of squares on the board, including start, goal, forbidden, and wall squares, and using Q-learning to navigate through them.
+
+Board Configuration
+The board is a 4x4 grid with 16 squares, each identified by a unique index.
+Special squares include:
+Start (S): Always located at square index 2.
+Two Goals
+Forbidden
+Wall
+Each square can either be one of the special squares or an ordinary (empty) square.
+Actions allowed are North, East, South, and West, with restrictions based on board boundaries and wall squares.
+Input Format
+You will receive a series of inputs that configure the board and specify the output requirements:
+
+Four integers specifying the indices of the two goals, forbidden square, and wall square.
+A character ('p' or 'q') indicating the type of output required:
+'p' for printing the optimal policy (Π*).
+'q' followed by an integer for printing the optimal Q-values (Q*) to a specified precision.
+The inputs ensure that special squares are distinct and non-overlapping.
+Implementation Details
+Initialize all Q-values to zero.
+Use the Q-learning formula from class lectures to update Q-values:
+Living reward (r) for each action is -0.1.
+Discount rate (γ) is 0.1.
+Learning rate (α) is 0.3.
+Special rewards:
++100 for reaching a goal square.
+-100 for entering the forbidden square.
+-0.1 for each action, including hitting the wall (where the position remains unchanged).
+Implement ε-greedy exploration with ε = 0.5, and a random seed of 1 for reproducibility.
+Convergence Criteria
+Optionally set a maximum of 100,000 iterations.
+Towards the end of learning, set ε = 0 to switch fully to exploitation mode.
+Deliverables
+Source code of the Q-learning implementation.
+A brief report documenting the approach, challenges faced, and final outcomes.
+Output files or screenshots demonstrating the results based on the input configurations.
 
