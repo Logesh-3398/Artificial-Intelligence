@@ -1,0 +1,21 @@
+
+Task Description
+You are required to write two functions to apply binary classification techniques using the perceptron and logistic regression algorithms. Each function will handle input data consisting of feature pairs and a class label, process this data according to the specified algorithm, and print the resulting classification metrics.
+Perceptron Function
+Input Format
+•	The function starts with the character 'P', indicating the use of the perceptron algorithm, followed by n triplets (where n < 100). Each triplet contains two feature inputs (x1, x2) and a class label (y), with y being either -1 or +1.
+Functionality
+•	Initialize the weight vector w to [0,0].
+•	Update the weights using the perceptron update rule: w=w+y×fw = w + y \times fw=w+y×f, where f is the feature vector. Perform these updates through a maximum of 100 iterations over all input samples.
+Logistic Regression Function
+Input Format
+•	Begin with the character 'L', signaling the logistic regression algorithm, followed by n triplets similar to those in the perceptron function.
+Functionality
+•	Start with the weight vector w at [0,0].
+•	Update the weights using the gradient of the logistic loss function with a learning rate (α\alphaα) of 0.1. Iterate this update process up to 100 times for all samples.
+•	Calculate and print the probability that each input sample belongs to the positive class using the logistic function.
+Common Guidelines
+•	Ensure that input parsing and data handling are robust and error-free.
+•	Use a systematic approach to update weights and calculate the required outputs based on the algorithmic rules discussed in class.
+•	Add clear and detailed comments in your code to elucidate the purpose and functionality of each part, including variable definitions, core logic, and output generation.
+
